@@ -5,6 +5,7 @@
 </head>
 <body>
 <?php
+include_once 'index.php';
 
 define ( 'DB_HOST', 'localhost' );
 define ( 'DB_USER', 'root' );

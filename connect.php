@@ -10,14 +10,16 @@
 <?php
 include_once 'user.php';
 
+
 $servername = "localhost";
 $username = "root";
 $password = "root";
+$database="Bookings";
 
 
 //Create Connection 
 
-$conn = new mysqli($servername, $username, $password);
+$conn = new mysqli($servername, $username, $password,$database);
 
 //Check connection 
 
@@ -36,11 +38,10 @@ if($conn->query($sql) === TRUE ){
 
 //Create Table:
 $sql = "CREATE TABLE Bookings.Reservations (
-    guest INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    firstname VARCHAR(30) NOT NULL,
-    lastname VARCHAR(30) NOT NULL,
+    firstname VARCHAR(100) NOT NULL,
+    lastname VARCHAR(100) NOT NULL,
     hotel VARCHAR(50) NOT NULL,
-    checkin INT(6) NOT NULL 
+    checkin INT(20) NOT NULL 
     )";
 
     if ($conn->query($sql) ===TRUE){
@@ -48,8 +49,7 @@ $sql = "CREATE TABLE Bookings.Reservations (
     } else {
         echo "Error creating table :" . $conn->error;
     }
-
-
+    
 $conn->close();
 ?>
 
