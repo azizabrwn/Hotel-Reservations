@@ -52,6 +52,8 @@ if(isset($_POST['submit'])){ //If the submit button is pressed, execute the foll
     echo "<button class=\"btn2\" type=\"submit\" name=\"confirm\">Confirm</button>";
     echo "</form> <br> <br>";
 
+  
+
     if(isset($_POST["submit"])) //If the second button is clicked, execute the following function
     //Prepare and bind to prevent duplicates:
     {
@@ -107,7 +109,7 @@ if(isset($_POST['submit'])){ //If the submit button is pressed, execute the foll
   <div class="row">
     <div class="col">
       <h3>The Dodgy Door Hotel</h3>
-      <img src="css/img/hotel1.jpg" alt="The Dodgy Door" width="350" height="345">
+      <img src="img/hotel1.jpg" alt="The Dodgy Door" width="350" height="345">
       <p>A front view of The Dodgy Door Hotel</p>
     </div>
     <div class="col">
@@ -128,7 +130,7 @@ if(isset($_POST['submit'])){ //If the submit button is pressed, execute the foll
   <div class="row">
     <div class="col">
       <h3>Cauliflower Cottage</h3>
-      <img src="css/img/hotel2.jpg" alt="The Cauliflower Cottage" width="350" height="345">
+      <img src="img/hotel2.jpg" alt="The Cauliflower Cottage" width="350" height="345">
       <p>A front view of Cauliflower Cottage</p>
     </div>
     <div class="col">
@@ -149,7 +151,7 @@ if(isset($_POST['submit'])){ //If the submit button is pressed, execute the foll
   <div class="row">
     <div class="col">
       <h3>Mystery Mansions</h3>
-      <img src="css/img/hotel3.jpg" alt="Mystery Mansions" width="350" height="345">
+      <img src="img/hotel3.jpg" alt="Mystery Mansions" width="350" height="345">
       <p>A front view of Mystery Mansions</p>
     </div>
     <div class="col">
